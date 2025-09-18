@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-paper-scissor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="Rock-paper-scissor.css">
 </head>
 <body>
-    <p>Rock Paper Scissor</p>
-    <button onclick="
-        
-        playGame('rock')
+  <h2>Rock Paper Scissor</h2>
 
-    ">Rock</button>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissor')">Scissor</button>
 
-    <button onclick="
+  <button onclick="resetScore()">Reset Score</button>
 
-        playGame('paper')
-    
-    ">Paper</button>
+  <p id="result"></p>
+  <p id="score"></p>
 
-    <button onclick="
-        
-        playGame('Scissor')
-
-    ">Scissor</button>
-
-    <button onclick="
-        score.wins = 0
-        score.losses = 0
-        score.ties = 0
-        localStorage.removeItem('score')
-    ">Reset Score</button>
-
-    <script src="Rock-paper-scissor.js" defer></script>
-    <link rel="stylesheet" href="Rock-paper-scissor.css">
+  <script src="Rock-paper-scissor.js"></script>
 </body>
 </html>
+
